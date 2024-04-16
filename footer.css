@@ -1,0 +1,51 @@
+footer {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  padding: 30px;
+
+}
+
+.footer {
+font-weight: bold;
+font-size: large;
+
+
+}
+.idioma {
+  font-weight: 100;
+}
+
+a {
+  color: white;
+  font-weight: normal;
+}
+
+button {
+  border-radius: 10px;
+  padding: 4%;
+  width: 300px;
+  font-size: medium;
+}
+
+button:hover {
+  background-color: rgb(160, 149, 149);
+}
+/* button:focus {
+  background-color: rgb(160, 149, 149);
+} */
+
+section {
+  font-weight: 100;
+}
+
+.block:hover:hover {
+  color: red;
+  display: inline;
+}
+
+h1 {
+  text-align: center;
+  font-style: oblique;
+}
