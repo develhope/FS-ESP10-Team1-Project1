@@ -1,0 +1,60 @@
+footer {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  padding: 30px;
+}
+
+.footer {
+  font-weight: bold;
+  font-size: large;
+}
+/* .idioma {
+  font-weight: 100;
+} */
+
+a {
+  color: white;
+  font-weight: normal;
+}
+
+button {
+  border-radius: 10px;
+  padding: 2%;
+  width: 200px;
+  font-size: medium;
+}
+
+button:hover {
+  background-color: rgb(160, 149, 149);
+}
+/* button:focus {
+  background-color: rgb(160, 149, 149);
+} */
+
+section {
+  font-weight: 100;
+}
+
+.block1:hover:hover {
+  color: red;
+  display: block;
+}
+
+.block {
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  font-style: oblique;
+}
+
+.box {
+  float: left;
+  margin-right: 50px;
+}
+div {
+  display: inline-block;
+}
