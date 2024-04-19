@@ -1,3 +1,4 @@
+/* <--------------Inicio estilos Ousama-----------------> */
 #parte1 {
     position: relative;
     width: 100%;
@@ -119,6 +120,8 @@
 .svgNavbar svg {
     width: 100%;
 }
+/* <--------------Fin estilos Carlos -------------------> */
+/* <--------------Inicio estilos Ousama-----------------> */
 .contenedor-titulo-imagenes {
     margin-top: 100px; 
 }
@@ -245,4 +248,5 @@
 background-size:unset;
 transition: opacity 1s ease 0s;
 }
+/* <--------------Fin estilos Ousama -------------------> */
 
