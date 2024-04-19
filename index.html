@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>porscheGrupo1</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     
 </head>
-<body>
+<body style="margin: 0; padding:0">
+  <div id="parte1" class="parte1">
+    <video autoplay muted loop id="video-background" onclick="window.location.href= 'https://www.porsche.com/spain/models/macan/macan-electric-models/macan-4-electric/'">
+        <source src="NuevoMacan4.mp4" type="video/mp4">
+    </video>
+    <div class="contenido1">
+        <div id="containerEnlace" onclick="window.location.href= 'https://www.porsche.com/spain/models/macan/macan-electric-models/macan-4-electric/'">
+            <h1>Keep your essence.</h1>
+            <a href="https://www.porsche.com/spain/models/macan/macan-electric-models/macan-4-electric/'" class="enlaceMacan4">Descubre Macan 4</a>
+        </div>
+        <div id="pause">
+            <button onclick=" 
+                if(document.getElementById('video-background').paused){
+                    document.getElementById('video-background').play();
+                    document.getElementById('pausa1').style.display='none'} 
+                else{
+                    document.getElementById('video-background').pause()}">
+                <svg class="iconoPausa" id="pausa1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" style="fill: white;">
+                <path d="M7 6h3v12H7zm7 0h3v12h-3z"/>
+                </svg>
+                <svg class="iconoPausa" id="pausa2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" style="fill: white;">
+                <path d="M8 18V6l10 6z"/>
+                </svg>
+            </button>
+        </div>
+        <div id="navbar">
+            <nav class="navbar-items">
+                <ul class="navbar-items">
+                    <li class="size">Menú
+                        <ul>
+
+                        </ul>
+                    </li>
+                    <li class="porsche size"><a href="https://www.porsche.com/spain/" style="text-decoration: none; color: white;">Porsche</a></li>
+                    <li class="svgNavbar"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                        width="100%" height="100%"
+                         >
+                       
+                       <g transform="translate(0.000000,32.000000) scale(0.100000,-0.100000)"
+                       fill="#FFFFFF" stroke="none">
+                       <path d="M112 247 c-26 -27 -28 -54 -6 -85 14 -20 14 -23 -1 -28 -16 -6 -45
+                       -54 -45 -74 0 -20 15 -9 30 23 18 38 58 55 98 41 15 -5 33 -23 42 -41 15 -32
+                       30 -43 30 -23 0 20 -29 68 -45 74 -15 5 -15 8 -1 28 22 32 20 61 -7 86 -30 28
+                       -68 28 -95 -1z m82 -13 c31 -30 9 -84 -34 -84 -24 0 -50 26 -50 50 0 24 26 50
+                       50 50 10 0 26 -7 34 -16z"/>
+                       </g>
+                       </svg></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</div>
+<div id="parte2" class="parte2">
+    <a href="https://www.porsche.com/spain/models/taycan/taycan-models/taycan/" class="Textoimagen1"><img src="ElnuevoTaycan.avif"></img><div class="Textoimagen">El nuevo taycan.</div></a>
+    <a href="https://www.porsche.com/spain/models/cayenne/cayenne-coupe-models/"class="marginImg"><img src="NuevoCayenneE-HybridCoupé.avif"></img><div class="Textoimagen">Nuevo Cayenne E-Hybrid Coupé.</div></a>
+    <a href="https://www.porsche.com/spain/models/cayenne/cayenne-coupe-models/"class="marginImg"><img src="911CarreraS.avif"></img><div class="Textoimagen">911 Carrera S.</div></a>
+    
+
+</div>
     <center>
         <div class="contenedor-titulo-imagenes">
         <div class= "Titulo"> 
@@ -72,3 +132,4 @@
   </body>
 
 </html>
+
