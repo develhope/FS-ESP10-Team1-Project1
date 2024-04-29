@@ -3,12 +3,54 @@
 <head>
   <title>porscheGrupo1</title>
         <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 </head>
 <body style="margin: 0; padding:0">
-  <!-- inicio Carlos  -->
+<!-- inicio Menu  -->
+  <div id="menu">
+    <div id="menuDesplegable">
+      <div id="mitad1">
+        <ul>
+          <li class="menuListado unselected" id="modelosListado" onclick="mostrarElementos('modelos', this)">Modelos <img src="media/mayor-que.png"></li>
+          <li class="menuListado unselected" onclick="mostrarElementos('asesoramiento', this)">asesoramiento y compra <img src="media/mayor-que.png"></li>
+          <li class="menuListado unselected" onclick="mostrarElementos('tienda', this)">tienda porsche online</li>
+          <li class="menuListado unselected" onclick="mostrarElementos('servicios', this)">Servicios <img src="media/mayor-que.png"></li>
+          <li class="menuListado unselected" onclick="mostrarElementos('experiencias', this)">experiencias <img src="media/mayor-que.png"></li>
+          <li class="menuListado unselected" onclick="mostrarElementos('centros', this)">centros porsche <img src="media/mayor-que.png"></li>
+          <li class="menuListado unselected" onclick="mostrarElementos('myPorsche', this)">myPorsche <img src="media/mayor-que.png"></li>
+        </ul>
+  </div>
+  <div class="mitad2" id="modelos">
+    modelos
+  </div>
+  <div class="mitad2" id="asesoramiento">
+    asesoramiento y compra
+  </div>
+  <div class="mitad2" id="tienda">
+    tienda porsche online
+  </div>
+  <div class="mitad2" id="servicios">
+    servicios
+  </div>
+  <div class="mitad2" id="experiencias">
+    experiencias 
+  </div>
+  <div class="mitad2" id="centros">
+    centros porsche
+  </div>
+  <div class="mitad2" id="myPorsche">
+    myPorsche
+  </div>
+  </div>
+  <div id="ocultarMenu">
+    <img src="media/cerrar.png" onclick="mostrarMenu()">
+  </div>
+</div>
+<!-- fin Menu -->
+<!-- inicio Carlos  -->
   <div id="parte1" class="parte1">
     <video autoplay muted loop id="video-background" onclick="window.location.href= 'https://www.porsche.com/spain/models/macan/macan-electric-models/macan-4-electric/'">
         <source src="media/NuevoMacan4.mp4" type="video/mp4">
@@ -36,13 +78,10 @@
         <div id="navbar">
             <nav class="navbar-items">
                 <ul class="navbar-items">
-                    <li class="size">Menú
-                        <ul>
-
-                        </ul>
+                    <li class="size" onclick="mostrarMenu()">Menú
                     </li>
-                    <li class="porsche size"><a href="https://www.porsche.com/spain/" style="text-decoration: none; color: white;">Porsche</a></li>
-                    <li class="svgNavbar"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                    <li class="porsche size" id="porsche-nav"><a href="https://www.porsche.com/spain/" style="text-decoration: none; color: white;">Porsche</a></li>
+                    <li class="svgNavbar" id="svgUsuario" onclick="mostrarMenu()"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                         width="100%" height="100%"
                          >
                        
@@ -61,6 +100,7 @@
     </div>
 
 </div>
+<div id="paginaCompleta">
 <div id="parte2" class="parte2">
     <a href="https://www.porsche.com/spain/models/taycan/taycan-models/taycan/" class="Textoimagen1"><img src="media/ElnuevoTaycan.avif"></img><div class="Textoimagen">El nuevo taycan.</div></a>
     <a href="https://www.porsche.com/spain/models/cayenne/cayenne-coupe-models/"class="marginImg"><img src="media/NuevoCayenneE-HybridCoupé.avif"></img><div class="Textoimagen">Nuevo Cayenne E-Hybrid Coupé.</div></a>
@@ -70,122 +110,71 @@
 </div>
 <!-- fin Carlos -->
 <!-- inicio Ousama  -->
-<center>
-  <div class="contenedor-titulo-imagenes">
-      <div class= "Titulo"> 
-          <h1>Modelos</h1>
-      </div>
 
-      <div class="contenedor-imagenes">
-          <div class="contenedor-fila">
-              <div class="contenedor-imagen">
-                  <div class="imagen-zoom">
-                    <a href="https://configurator.porsche.com/es-ES/model-start/718">
-                    <img src="https://images-porsche.imgix.net/-/media/787664363FDE4686BD0A6316DBB8422E_FD01D47051734F28956FF81D44A88210_718---Desktop?iar=0&w=590&ar=3%3A4&q=85&auto=format" class="imagenA">
-                  </a>  
-                  </div>
-                  <div class="texto-superpuesto">Biplaza con alto dinamismo de conducción gracias a su motor central.</div>
-                  <div class="texto-superpuesto2">Desde EUR 74.555,00 PVP recomendado.</div>
-                  <a href="https://configurator.porsche.com/es-ES/model-start/718">
-                  <div class="texto-superpuesto3">Configure su 718.</div>
-                </a>
-                <a href="https://www.porsche.com/spain/models/718/">
-                  <div class="texto-superpuesto4">Todos los modelos 718.</div>
-                </a>
-              </div>
+    <center>
+        <div class="contenedor-titulo-imagenes">
+        <div class= "Titulo"> 
+        <h1>Modelos</h1>
+    </div>
 
-              <div class="contenedor-imagen">
-                  <div class="imagen-zoom">
-                    <a href="https://configurator.porsche.com/es-ES/model-start/911">
-                    <img src="https://images-porsche.imgix.net/-/media/6937027C36EC4613B14E2F8F91807228_79D8BB668E23451CABE55BCEA9E3FFB8_911---Desktop?iar=0&w=590&ar=3%3A4&q=85&auto=format" class="imagenB">
-                  </a>  
-                  </div>
-                  <div class="texto-superpuesto">El deportivo icónico con motor trasero y las más altas prestaciones.</div>
-                  <div class="texto-superpuesto2">Desde EUR 141.868.00 PVP recomendado.</div>
-                  <a href="https://configurator.porsche.com/es-ES/model-start/911">
-                  <div class="texto-superpuesto3">Configure su 911.</div>
-                </a>
-                <a href="https://www.porsche.com/spain/models/911/">
-                  <div class="texto-superpuesto4">Todos los modelos 911.</div>
-                </a>
-              </div>
-          </div>
-
-          <div class="contenedor-fila">
-              <div class="contenedor-imagen">
-                  <div class="imagen-zoom">
-                    <a href="https://configurator.porsche.com/es-ES/model-start/taycan">
-                    <img src="https://images-porsche.imgix.net/-/media/597FBFF43D96408FADBA6AE44CD0372E_ADBA835557B243B3A1D4682C61FA1CA5_Tokyo---Desktop?iar=0&w=590&ar=3%3A4&q=85&auto=format" class="imagenC">
-                  </a>  
-                  </div>
-                  <div class="texto-superpuesto">Berlina deportiva totalmente eléctrica <br> con maletero delantero y trasero.</div>
-                  <div class="texto-superpuesto2">Desde EUR 105.682,00 PVP recomendado.</div>
-                  <a href="https://configurator.porsche.com/es-ES/model-start/taycan">
-                  <div class="texto-superpuesto3">Configure su Taycan.</div>
-                </a>
-                <a href="https://www.porsche.com/spain/models/taycan/taycan-models/">
-                  <div class="texto-superpuesto4">Todos los modelos Taycan.</div>
-                </a>
-              </div>
-
-              <div class="contenedor-imagen">
-                  <div class="imagen-zoom">
-                    <a href="https://configurator.porsche.com/es-ES/model-start/panamera">
-                    <img src="https://images-porsche.imgix.net/-/media/CD077339BC4A4AFB803ED6D028082604_F8FE50949A584084B6F0373E8F8FE6E3_Panamera---Desktop?iar=0&w=590&ar=3%3A4&q=85&auto=format" class="imagenD">
-                  </a>  
-                  </div>
-                  <div class="texto-superpuesto">Berlina deportiva de lujo de cuatro plazas.</div>
-                  <div class="texto-superpuesto2">Desde EUR 128.737,00 PVP recomendado.</div>
-                  <a href="https://configurator.porsche.com/es-ES/model-start/panamera">
-                  <div class="texto-superpuesto3">Configure su Panamera.</div>
-                </a>
-                <a href="https://www.porsche.com/spain/models/panamera/panamera-models/">
-                  <div class="texto-superpuesto4">Todos los modelos Panamera.</div>
-                </a>
-              </div>
-          </div>
-
-          <div class="contenedor-fila">
-              <div class="contenedor-imagen">
-                  <div class="imagen-zoom">
-                    <a href="https://configurator.porsche.com/es-ES/model-start/macan">
-                    <img src="https://images-porsche.imgix.net/-/media/D9863281BEC14473AE2EAD15A724142B_2691C775BE6D452AA99C243DCF95CF1D_Berlin---Desktop?iar=0&w=590&ar=3%3A4&q=85&auto=format" class="imagenE">
-                  </a>  
-                  </div>
-                  <div class="texto-superpuesto">Todoterreno compacto de gran versatilidad.</div>
-                  <div class="texto-superpuesto2">Desde EUR 85.382,00 PVP recomendado.</div>
-                  <a href="https://configurator.porsche.com/es-ES/model-start/macan">
-                  <div class="texto-superpuesto3">Configure su Macan.</div>
-                </a>
-                <a href="https://www.porsche.com/spain/models/macan/macan-electric-models/"> 
-                <div class="texto-superpuesto4">Todos los modelos Macan.</div>
-              </a> 
-              </div>
-
-              <div class="contenedor-imagen">
-                <a href="https://configurator.porsche.com/es-ES/model-start/cayenne">
-                <div class="imagen-zoom">
-                      <img src="https://images-porsche.imgix.net/-/media/657C1C9232C0426583987BC10E7EAE09_B3896980D34C432290085ED61B6F477F_Cayenne---Desktop?iar=0&w=590&ar=3%3A4&q=85&auto=format" class="imagenF">
-                    </a>  
-                  </div>
-                  <div class="texto-superpuesto">Todoterreno de hasta 5 plazas y, sin embargo, ante todo, un deportivo. </div>
-                  <div class="texto-superpuesto2">Desde EUR 108.619,00 PVP recomendado.</div>
-                  <a href="https://configurator.porsche.com/es-ES/model-start/cayenne">
-                  <div class="texto-superpuesto3">Configure su Cayenne.</div>
-                </a>
-                <a href="https://www.porsche.com/spain/models/cayenne/">
-                <div class="texto-superpuesto4">Todos los modelos Cayenne.</div>
-              </a>  
-              </div>
-          </div>
-      </div>
-  </div>
-</center>
     
+
+
+
+      <div class="Imagenes1">
+        <div class="contenedor-imagen">
+          <img src="https://images-porsche.imgix.net/-/media/787664363FDE4686BD0A6316DBB8422E_FD01D47051734F28956FF81D44A88210_718---Desktop?iar=0&w=590&ar=3%3A4&q=85&auto=format" class="imagenA">
+          <div class="texto-superpuesto">Biplaza con alto dinamismo de conducción gracias a su motor central.</div>
+          <div class="texto-superpuesto2">Desde EUR 74.555,00 PVP recomendado.</div>
+          <div class="texto-superpuesto3">Configure su 718.</div>
+          <div class="texto-superpuesto4">Todos los modelos 718.</div>
+          
+      </div>
+        <div class="contenedor-imagen">
+          <img src="https://images-porsche.imgix.net/-/media/6937027C36EC4613B14E2F8F91807228_79D8BB668E23451CABE55BCEA9E3FFB8_911---Desktop?iar=0&w=590&ar=3%3A4&q=85&auto=format" class="imagenB">
+          <div class="texto-superpuesto">El deportivo icónico con motor trasero y las más altas prestaciones.</div>
+          <div class="texto-superpuesto2">Desde EUR 141.868.00 PVP recomendado.</div>
+          <div class="texto-superpuesto3">Configure su 911.</div>
+          <div class="texto-superpuesto4">Todos los modelos 911.</div>
+        </div>
+      </div>
+      <br>
+      <div class="Imagenes2">
+        <div class="contenedor-imagen">
+          <img src="https://images-porsche.imgix.net/-/media/597FBFF43D96408FADBA6AE44CD0372E_ADBA835557B243B3A1D4682C61FA1CA5_Tokyo---Desktop?iar=0&w=590&ar=3%3A4&q=85&auto=format" class="imagenC">
+          <div class="texto-superpuesto">Berlina deportiva totalmente eléctrica <br> con maletero delantero y trasero.</div>
+          <div class="texto-superpuesto2">Desde EUR 105.682,00 PVP recomendado.</div>
+          <div class="texto-superpuesto3">Configure su Taycan.</div>
+          <div class="texto-superpuesto4">Todos los modelos Taycan.</div>
+        </div>
+        <div class="contenedor-imagen">
+          <img src="https://images-porsche.imgix.net/-/media/CD077339BC4A4AFB803ED6D028082604_F8FE50949A584084B6F0373E8F8FE6E3_Panamera---Desktop?iar=0&w=590&ar=3%3A4&q=85&auto=format" class="imagenD">
+          <div class="texto-superpuesto">Berlina deportiva de lujo de cuatro plazas.</div>
+          <div class="texto-superpuesto2">Desde EUR 128.737,00 PVP recomendado.</div>
+          <div class="texto-superpuesto3">Configure su Panamera.</div>
+          <div class="texto-superpuesto4">Todos los modelos Panamera.</div>
+        </div>
+      </div>
+      <br>
+      <div class="Imagenes3">
+        <div class="contenedor-imagen">
+          <img src="https://images-porsche.imgix.net/-/media/D9863281BEC14473AE2EAD15A724142B_2691C775BE6D452AA99C243DCF95CF1D_Berlin---Desktop?iar=0&w=590&ar=3%3A4&q=85&auto=format" class="imagenE">
+          <div class="texto-superpuesto">Todoterreno compacto de gran versatilidad.</div>
+          <div class="texto-superpuesto2">Desde EUR 85.382,00 PVP recomendado.</div>
+          <div class="texto-superpuesto3">Configure su Macan.</div>
+          <div class="texto-superpuesto4">Todos los modelos Macan.</div>
+        </div>
+        <div class="contenedor-imagen">
+          <img src="https://images-porsche.imgix.net/-/media/657C1C9232C0426583987BC10E7EAE09_B3896980D34C432290085ED61B6F477F_Cayenne---Desktop?iar=0&w=590&ar=3%3A4&q=85&auto=format" class="imagenF">
+          <div class="texto-superpuesto">Todoterreno de hasta 5 plazas y, sin embargo, ante todo, un deportivo. </div>
+          <div class="texto-superpuesto2">Desde EUR 108.619,00 PVP recomendado.</div>
+          <div class="texto-superpuesto3">Configure su Cayenne.</div>
+          <div class="texto-superpuesto4">Todos los modelos Cayenne.</div>
+        </div>
+      </div>
+    </center>
 <!-- fin Ousama -->
   <!-- inicio Harold  -->
-<!DOCTYPE html>
-<body>
 <div class="container-buscador">
     <div class="div-porsche">
         <div class="searchcontainer" >
@@ -256,8 +245,6 @@
         </div>
     </div>
 </div>
-</body>
-</html>
   <!-- inicio Harold  -->
 
 <!-- inicio Natalia  -->
@@ -342,7 +329,7 @@
 <!-- Fin Natalia -->  
   
 
-
+</div>
 </body>
 
 
