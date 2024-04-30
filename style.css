@@ -189,34 +189,42 @@
 }
 
 .Titulo {
-  position:relative;
+  position: relative;
   top: 0px; 
   left: 50%; 
   transform: translateX(-50%); 
   color: black;
-  
-  
   font-family: Arial, sans-serif;
   font-size: 20px;
   z-index: 1; 
 }
 
-
 .contenedor-imagen {
   position:relative;
   display: inline-block;
   margin-right: 20px; 
+  margin-bottom: 20px;
+  
 }
 
+.imagen-zoom {
+  overflow: hidden;
+  border-radius: 10px;
+}
 
+.imagen-zoom img {
+  transition: transform 0.3s ease;
+}
 
+.imagen-zoom:hover img {
+  transform: scale(1.1);
+}
 
 .texto-superpuesto {
   position:absolute;
   top: 325px;
   left: 20px;
   color: white;
-  
   padding: 5px;
   font-family: Arial, sans-serif;
   font-size: 20px;
@@ -224,14 +232,11 @@
   text-align: left;
 }
 
-
-
 .texto-superpuesto2 {
   position:absolute;
   top: 380px;
   left: 20px;
   color: white;
-  
   padding: 5px;
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -251,7 +256,6 @@
   border-radius: 5px;
   width: 335px;
   height: 30px;
-  
 }
 
 .texto-superpuesto4 {
@@ -266,9 +270,9 @@
   z-index: 1;
   border-radius: 5px;
   border-color: white;
+  border: 2px solid white;
   width: 335px;
   height: 30px;
-  
 }
 
 .imagenA,
@@ -292,35 +296,22 @@
 
 .texto-superpuesto3:hover, 
 .texto-superpuesto4:hover {
-  background-color: rgba(77, 77, 77, 0.768); 
-  color: rgba(255, 255, 255, 0.8); 
+  background-color: rgb(144, 142, 142); 
+  color: rgb(255, 255, 255); 
+  transform: 0.8s ease;
 }
 
-.Prueba{
-  width: 500px;
-  height: 550px;
-  border-radius: 10px;
-  background-image: url("https://images-porsche.imgix.net/-/media/787664363FDE4686BD0A6316DBB8422E_FD01D47051734F28956FF81D44A88210_718---Desktop?iar=0&w=590&ar=3%3A4&q=85&auto=format");
-  margin-bottom: 5rem;
-  background-size:cover;
-
-}
-
-.Prueba:hover{
-background-size:unset;
-transition: opacity 1s ease 0s;
-}
 /* <--------------Fin estilos Ousama -------------------> */
 /* <--------------inicio estilos Harold -------------------> */
 
-/* body {
+/*body {
   width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center
-} */
+}*/
 
 .container-buscador{
   background-color: rgb(255, 255, 255);
@@ -373,7 +364,7 @@ transition: opacity 1s ease 0s;
   margin-top: auto;
 }
 
-/* p{
+/*p{
   color: rgb(1, 2, 5);
   font: 4001rem/calc(2.125ex + 6px)"";
   font-family:"Porsche next", "Arial Narrow", Arial, "Heiti SC", SimHei, sans-serif;
@@ -385,7 +376,7 @@ transition: opacity 1s ease 0s;
   text-align: start;
   
   
-} */
+}*/
 .buscadorhead{
   color: rgb(1, 2, 5);
   font-family: "Porsche next", "Arial Narrow", Arial, "Heiti SC", SimHei, sans-serif;
@@ -578,18 +569,18 @@ display: block;
 text-decoration: none;
 }
 
-/* h1 {
+/*h1 {
 text-align: center;
 font-style: oblique;
-} */
+}*/
 
 .box {
 float: left;
 margin-right: 50px;
 }
-/* div {
+/*div {
 display: inline-block;
-} */
+}*/
 
 /* <--------------Fin estilos Natalia -------------------> */
 
