@@ -36,4 +36,4 @@ function mostrarElementos(idElement, menuListado) {
     element.style.display = "block";
     menuListado.classList.remove("unselected");
     menuListado.classList.add("selected");
-}
+} 
