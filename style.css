@@ -300,6 +300,15 @@
     color: rgb(255, 255, 255); 
     transform: 0.8s ease;
   }
+
+  #modelos {
+    display: flex;
+    justify-content: space-between; 
+    padding-left: 75px;
+    padding-top: 70px;
+}
+
+
   
 /* <--------------Fin estilos Ousama -------------------> */
 /* <--------------inicio estilos Harold -------------------> */
