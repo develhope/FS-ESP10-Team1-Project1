@@ -36,4 +36,22 @@ function mostrarElementos(idElement, menuListado) {
     element.style.display = "block";
     menuListado.classList.remove("unselected");
     menuListado.classList.add("selected");
+} 
+function botonPausa() {
+    let pause = document.getElementById('pausa1');
+    let play = document.getElementById('pausa2');
+    let video = document.getElementById('video-background');
+    if(video.paused){
+        video.play();
+        pause.style.display ='none';
+        play.style.display ='flex'
+    } 
+    else{
+        video.pause();
+        play.style.display ='none'
+        pause.style.display ='flex'
+    }
 }
+function enlaceVideo() {
+    window.location.href= 'https://www.porsche.com/spain/models/macan/macan-electric-models/macan-4-electric/'
+} 
