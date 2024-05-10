@@ -583,63 +583,108 @@
 footer {
   background-color: black;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: auto;
-  padding: 30px;
+  font-family: "Porsche Next", "Arial Narrow", Arial, "Heiti SC", "SimHei", "sans-serif" ;
+  width: 100vw;
+  padding: 50px;
+  font-size: 16px;
 }
 
-.footer {
-  font-weight: bold;
-  font-size: large;
+.spain{
+ width: 30px;
+ height: 30px; 
 }
-/* .idioma {
-  font-weight: 100;
-} */
 
-a {
+.bloque{
+  margin-left: 10px;
+  text-decoration: none;
   color: white;
   font-weight: normal;
 }
 
-button {
-  border-radius: 10px;
-  padding: 2%;
-  width: 200px;
-  font-size: medium;
+.bloque2{
+margin: 20px;
+color: white;
+}
+
+.bloque2:hover {
+  color: red;
+}
+
+.part-2{
+display: flex;  
+flex-direction: row;
+gap:2rem;
+
+}
+
+
+.redes {
+  display:flex ; 
+  flex-direction: column; 
+  /* margin:0.1rem; */
+  }
+  
+.Contacto button{
+
+  border-radius: 5px;
+  width: 250px;
+  height: 50px;
+  font-size: 16px;
+ 
 }
 
 button:hover {
-  background-color: rgb(160, 149, 149);
+  background-color: rgb(207, 199, 199);
 }
-/* button:focus {
-  background-color: rgb(160, 149, 149);
-} */
 
-section {
-  font-weight: 100;
-}
+.part-3{
+  display: flex;  
+  flex-direction: row;
+  gap:10rem;
+  }
 
 .block1:hover:hover {
   color: red;
   display: block;
+
+}
+.block1{
+ margin:0.5rem; 
 }
 
-.block {
-  text-decoration: none;
+.logos{
+padding: 15px;
+background-color: white;
+border-radius: 5px;
+width: 20px;
+height: 10x;  
+margin: 5px;
 }
 
-/*h1 {
-  text-align: center;
-  font-style: oblique;
-}*/
-
+.logos:hover {
+  background-color: rgb(207, 199, 199);
+}
 .box {
-  float: left;
-  margin-right: 50px;
+  display:flex ; 
+  flex-direction: column;
+  margin:0;
 }
-/*div {
-  display: inline-block;
-}*/
+
+.region{
+ font-size: 20px; 
+}
+
+.bloque3 {
+color: white;
+}
+
+.bloque3:hover:hover{
+color: red;
+}
+
+.footerporsche{
+  margin-left: 500px;
+}
 
 /* <--------------Fin estilos Natalia -------------------> */
 
