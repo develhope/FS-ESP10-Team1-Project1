@@ -12,7 +12,7 @@
 #menu #menuDesplegable {
     display: flex;
     background-color: white;
-    width: 42%;
+    width: 50%;
     height: 100vh;
     }
 #menu #menuDesplegable #mitad1 {
@@ -25,10 +25,11 @@
     margin-right: 11%;
 }
 #menu #menuDesplegable #mitad1 ul li {
-    padding-top: 1.7vh;
+    padding-top: 4vh;
     padding-bottom: 0.1vh;
-    font-size: 25px;
+    font-size: 22px;
     height: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #menu #menuDesplegable #mitad1 ul li img {
     display: flex;
@@ -214,6 +215,7 @@
     list-style: none;
     justify-content: space-between;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .size {
     font-size: 30px;
@@ -356,6 +358,31 @@
     justify-content: space-between; 
     padding-left: 75px;
     padding-top: 70px;
+}
+
+.Posicionamiento{
+  margin-top: 35%;
+}
+
+#asesoramiento a{
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  margin-left: 10%;
+  margin-top: 10%;
+  text-decoration: none;
+  font-size: 18px;
+  
+}
+
+#servicios a{
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  margin-left: 10%;
+  margin-top: 10%;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 
