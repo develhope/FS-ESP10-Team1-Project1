@@ -12,7 +12,7 @@
 <!-- inicio Menu  -->
   <div id="menu">
     <div id="menuDesplegable">
-      <div id="mitad1">
+      <div class="mitad1" id="mitad1PorDefecto">
         <ul>
           <li class="menuListado unselected" id="modelosListado" onclick="mostrarElementos('modelos', this)">Modelos <img src="media/mayor-que.png"></li>
           <li class="menuListado unselected" onclick="mostrarElementos('asesoramiento', this)">Asesoramiento y compra <img src="media/mayor-que.png"></li>
@@ -23,13 +23,42 @@
           <li class="menuListado unselected" onclick="mostrarElementos('myPorsche', this)">MyPorsche <img src="media/mayor-que.png"></li>
         </ul>
   </div>
+  <div class="mitad1" id="mitad1ModelosCoche">
+    <div id="buttonGoBack" onclick="mostrarMenu(true)"> <img src="media/flechaIzquierda.png" > Modelos</div>
+    <ul>
+      <li class="segundoListado unselected" id="li718" onclick="mostrarModelos('718', this)">718 <div>Gasolina</div><img src="media/mayor-que.png"></li>
+      <li class="segundoListado unselected" id="li911" onclick="mostrarModelos('911', this)">911 <div>Gasolina</div><img src="media/mayor-que.png"></li>
+      <li class="segundoListado unselected" id="litaycan" onclick="mostrarModelos('taycan', this)">Taycan <div>Eléctrico</div><img src="media/mayor-que.png"></li>
+      <li class="segundoListado unselected" id="lipanamera" onclick="mostrarModelos('panamera', this)">Panamera <div>Gasolina | Híbrido</div><img src="media/mayor-que.png"></li>
+      <li class="segundoListado unselected" id="limacan" onclick="mostrarModelos('macan', this)">Macan <div>Eléctrico | Gasolina</div><img src="media/mayor-que.png"></li>
+      <li class="segundoListado unselected" id="licayenne" onclick="mostrarModelos('cayenne', this)">Cayenne <div>Gasolina | Híbrido</div><img src="media/mayor-que.png"></li>
+    </ul>
+  </div>
+  <div class="mitad2" id="718">
+    718
+  </div>
+  <div class="mitad2" id="911">
+    911
+  </div>
+  <div class="mitad2" id="taycan">
+    taycan
+  </div>
+  <div class="mitad2" id="panamera">
+    panamera
+  </div>
+  <div class="mitad2" id="macan">
+    macan
+  </div>
+  <div class="mitad2" id="cayenne">
+    cayenne
+  </div>
   <div class="mitad2" id="modelos">
-    <img src="media/718 (1).webp" alt="718">
-    <img src="media/911.webp" alt="911">
-    <img src="media/taycan.webp" alt="Taycan">
-    <img src="media/panamera.webp" alt="Panamera">
-    <img src="media/macan.webp" alt="Macan">
-    <img src="media/cayenne.webp" alt="Cayenne">
+    <img src="media/718 (1).webp" alt="718" onclick="mostrarModelos('718', document.getElementById('li718') )">
+    <img src="media/911.webp" alt="911" onclick="mostrarModelos('911', document.getElementById('li911'))">
+    <img src="media/taycan.webp" alt="Taycan" onclick="mostrarModelos('taycan', document.getElementById('litaycan'))">
+    <img src="media/panamera.webp" alt="Panamera" onclick="mostrarModelos('panamera', document.getElementById('lipanamera'))">
+    <img src="media/macan.webp" alt="Macan" onclick="mostrarModelos('macan', document.getElementById('limacan'))">
+    <img src="media/cayenne.webp" alt="Cayenne" onclick="mostrarModelos('cayenne', document.getElementById('licayenne'))">
   </div>
   <div class="mitad2" id="asesoramiento">
     <div class="Posicionamiento">
