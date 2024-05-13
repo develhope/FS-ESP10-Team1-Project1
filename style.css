@@ -404,6 +404,11 @@
   padding-top: 70px;
 }
 
+.modelos2{
+  display: flex;
+  justify-content: space-between;
+}
+
 .Posicionamiento{
 margin-top: 35%;
 }
@@ -428,6 +433,31 @@ margin-top: 10%;
 text-decoration: none;
 font-size: 18px;
 }
+
+.configurar{
+  border: 2px solid #000; /* Grosor y color del borde */
+  padding: 10px; /* Espacio dentro del recuadro */
+  width: 200px;
+  margin-left: 20%;
+  
+}
+
+.comparar{
+  border: 2px solid #000; /* Grosor y color del borde */
+  padding: 10px; /* Espacio dentro del recuadro */
+  width: 200px;
+  margin-left: 20%;
+  
+}
+
+.reestreno{
+  border: 2px solid #000; /* Grosor y color del borde */
+  padding: 10px; /* Espacio dentro del recuadro */
+  width: 200px;
+  margin-left: 20%;
+  
+}
+
 
 
 
