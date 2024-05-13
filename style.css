@@ -439,7 +439,8 @@ font-size: 18px;
   padding: 10px; /* Espacio dentro del recuadro */
   width: 200px;
   margin-left: 20%;
-  
+  margin-bottom: 20px;
+  border-radius: 6px;
 }
 
 .comparar{
@@ -447,7 +448,8 @@ font-size: 18px;
   padding: 10px; /* Espacio dentro del recuadro */
   width: 200px;
   margin-left: 20%;
-  
+  margin-bottom: 20px;
+  border-radius: 6px;
 }
 
 .reestreno{
@@ -455,9 +457,27 @@ font-size: 18px;
   padding: 10px; /* Espacio dentro del recuadro */
   width: 200px;
   margin-left: 20%;
-  
+  margin-bottom: 20px;
+  border-radius: 6px;
 }
 
+.marcaModelo{
+  border: 2px solid #000; /* Grosor y color del borde */
+  padding: 10px; /* Espacio dentro del recuadro */
+  width: 200px;
+  margin-left: 20%;
+  border-radius: 6px;
+}
+
+.estructura{
+  margin-top: 25%;
+}
+
+.modelos2{
+  display: block;
+  margin-left: 15%;
+  margin-bottom: 20px;
+}
 
 
 
