@@ -416,9 +416,16 @@
   padding-top: 70px;
 }
 
-.modelos2{
-  display: flex;
-  justify-content: space-between;
+#modelos img {
+  display: block;
+  width: 100%;
+  max-width: 70%; /* Ajusta el tamaño máximo de las imágenes según sea necesario */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#modelos img:hover {
+  transform: scale(1.1);
+  
 }
 
 .Posicionamiento{
@@ -453,6 +460,12 @@ font-size: 18px;
   margin-left: 20%;
   margin-bottom: 20px;
   border-radius: 6px;
+  text-align: center;
+}
+
+.configurar:hover{
+  background-color: rgba(128, 128, 128, 0.17);
+  transition: 0.3ms;
 }
 
 .comparar{
@@ -462,6 +475,12 @@ font-size: 18px;
   margin-left: 20%;
   margin-bottom: 20px;
   border-radius: 6px;
+  text-align: center;
+}
+
+.comparar:hover{
+  background-color: rgba(128, 128, 128, 0.17);
+  transition: 0.3ms;
 }
 
 .reestreno{
@@ -473,12 +492,23 @@ font-size: 18px;
   border-radius: 6px;
 }
 
+.reestreno:hover{
+  background-color: rgba(128, 128, 128, 0.17);
+  transition: 0.3ms;
+}
+
 .marcaModelo{
   border: 2px solid #000; /* Grosor y color del borde */
   padding: 10px; /* Espacio dentro del recuadro */
   width: 200px;
   margin-left: 20%;
   border-radius: 6px;
+  text-align: center;
+}
+
+.marcaModelo:hover{
+  background-color: rgba(128, 128, 128, 0.17);
+  transition: 0.3ms;
 }
 
 .estructura{
@@ -487,8 +517,22 @@ font-size: 18px;
 
 .modelos2{
   display: block;
-  margin-left: 15%;
+  margin-left: 22%;
   margin-bottom: 20px;
+}
+
+
+
+.modelos2 img {
+  display: block;
+  width: 100%;
+  max-width: 70%; /* Ajusta el tamaño máximo de las imágenes según sea necesario */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modelos2 img:hover {
+  transform: scale(1.1);
+  
 }
 
 
