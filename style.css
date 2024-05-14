@@ -555,6 +555,13 @@ font-size: 18px;
   margin-bottom: 20px;
   border-radius: 6px;
   text-align: center;
+  
+  
+}
+
+.configurar a{
+  text-decoration: none;
+  color: black;
 }
 
 .configurar:hover{
@@ -572,6 +579,11 @@ font-size: 18px;
   text-align: center;
 }
 
+.comparar a{
+  text-decoration: none;
+  color: black;
+}
+
 .comparar:hover{
   background-color: rgba(128, 128, 128, 0.17);
   transition: 0.3ms;
@@ -586,6 +598,11 @@ font-size: 18px;
   border-radius: 6px;
 }
 
+.reestreno a{
+  text-decoration: none;
+  color: black;
+}
+
 .reestreno:hover{
   background-color: rgba(128, 128, 128, 0.17);
   transition: 0.3ms;
@@ -598,6 +615,11 @@ font-size: 18px;
   margin-left: 20%;
   border-radius: 6px;
   text-align: center;
+}
+
+.marcaModelo a{
+  text-decoration: none;
+  color: black;
 }
 
 .marcaModelo:hover{
