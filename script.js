@@ -10,7 +10,7 @@ function mostrarMenu(mostrar) {
     mitad1Default.style.display = "block";
     modelosCoche.style.display = "none";
     mostrarElementos("modelos", modelosListado);
-    if (menu.style.display === "none" || mostrar) {
+    if (menu.style.display == "none" ||menu.style.display == "" || mostrar) {
         menu.style.display = "flex";
         paginaCompleta.style.display = "none";
         pause.style.display = "none";
@@ -45,15 +45,13 @@ function botonPausa() {
     let pause = document.getElementById('pausa1');
     let play = document.getElementById('pausa2');
     let video = document.getElementById('video-background');
-    if(video.paused){
-        video.play();
-        pause.style.display ='none';
-        play.style.display ='flex'
+    if(!video.paused){
+        video.pause();
+       document.getElementById("pausa-play").src="media/play.png"
     } 
     else{
-        video.pause();
-        play.style.display ='none'
-        pause.style.display ='flex'
+        video.play();
+        document.getElementById("pausa-play").src="media/pause.png"
     }
 }
 function enlaceVideo() {

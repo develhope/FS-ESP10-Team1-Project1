@@ -214,9 +214,6 @@
   position: absolute;
   right: 5%;
   top: 90vh;
-  width: 15%;
-  justify-content: flex-end;
-  display: flex;
 }
 .iconoPausa {
   background-color: transparent;
@@ -224,8 +221,8 @@
 #pause button {
   background-color: transparent;
   border: 1px solid white;
-  width: 15%;
   cursor: pointer;
+  padding: 10px;
 }
 #pausa2 {
   display: none;
