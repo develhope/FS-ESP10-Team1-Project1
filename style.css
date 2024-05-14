@@ -147,7 +147,6 @@
       font-size: 18px;
     }
     
-  
      #mitad1ModelosCoche {
       display: none;
      }
@@ -177,6 +176,52 @@
         color:grey;
        
       }
+	  .centrosPorsche {
+      margin-left: 2vw;
+      margin-top: 10vh;
+     }
+     .centrosPorsche input[type="search"] {
+      height: 6vh;
+      width: 18.5vw;
+      border-radius: 5px;
+     }
+     .centrosPorsche button {
+      border: none;
+      position: absolute;
+      margin-left: -40px;
+      margin-top: 20px;
+      background-color: white;
+     }
+     .centrosPorsche button img {
+      width: 1vw;
+      height: 2vh;
+      
+     }
+     .centrosPorsche p {
+      margin-top: 30px;
+     }
+     .centrosPorsche .ubicacionActual img {
+      width: 1vw;
+      height: 2vh;
+      margin-left: -20px;
+     }
+     .centrosPorsche .ubicacionActual p {
+      margin-top: 15px;
+      margin-left: 10px;
+     }
+     .centrosPorsche .ubicacionActual {
+      display: inline-flex;
+      align-items: center;
+      border: 2px solid black;
+      justify-content: center;
+      height: 6vh;
+      width: 18.5vw;
+      border-radius: 5px;
+     }
+     .centrosPorsche .ubicacionActual:hover {
+      background-color: rgb(224, 218, 218); 
+      cursor: pointer;
+     }
 /* <--------------fin estilos menu-----------------> */
 /* <--------------Inicio estilos Carlos-----------------> */
 #parte1 {
@@ -284,16 +329,17 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 .size {
-  font-size: 30px;
+  font-size: 15px;
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: row;
-  height: 3.5vh;
+  height: 1.7vh;
+  margin-left: 30px;
 }
 .size img {
-  width: 1vw;
-  height: 3.5vh;
+  width: 0.5vw;
+  height: 1.7vh;
   padding-right: 10px;
 }
 .size:hover {
@@ -302,10 +348,10 @@
 .svgNavbar:hover {
   background-color: rgba(89, 83, 83, 0.515);
 }
-.porsche {
+.porscheNavbar {
   margin-right: 100px;
   font-family: "Porsche Next", "Arial Narrow", Arial, "Heiti SC", "SimHei", "sans-serif";
-  font-size: 30;
+  font-size: 30px;
 }
 .svgNavbar {
   margin-right: 50px;
