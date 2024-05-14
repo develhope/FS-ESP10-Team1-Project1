@@ -701,25 +701,27 @@ font-size: 18px;
 /* <--------------Fin estilos Harold -------------------> */
 /* <-------------- Inicio Natalia -------------------> */
 
+
 footer {
-background-color: black;
-color: white;
-font-family: "Porsche Next", "Arial Narrow", Arial, "Heiti SC", "SimHei", "sans-serif" ;
-width: 100vw;
-padding: 50px;
-font-size: 16px;
+  background-color: rgb(14, 14, 18);
+  color: white;
+  font-family: "Porsche Next", "Arial Narrow", Arial, "Heiti SC", "SimHei", "sans-serif" ;
+  width: 100vw;
+  padding: 50px;
+  font-size: 18px;
+  margin-right: 50px;
 }
 
 .spain{
-width: 30px;
-height: 30px; 
+ width: 30px;
+ height: 30px; 
 }
 
 .bloque{
-margin-left: 10px;
-text-decoration: none;
-color: white;
-font-weight: normal;
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
 }
 
 .bloque2{
@@ -728,7 +730,7 @@ color: white;
 }
 
 .bloque2:hover {
-color: red;
+  color: red;
 }
 
 .part-2{
@@ -740,37 +742,38 @@ gap:2rem;
 
 
 .redes {
-display:flex ; 
-flex-direction: column; 
-/* margin:0.1rem; */
-}
-
+  display:flex ; 
+  flex-direction: column; 
+  /* margin:0.1rem; */
+  }
+  
 .Contacto button{
 
-border-radius: 5px;
-width: 250px;
-height: 50px;
-font-size: 16px;
-
+  border-radius: 5px;
+  width: 250px;
+  height: 50px;
+  font-size: 16px;
+ 
 }
 
 button:hover {
-background-color: rgb(207, 199, 199);
+  background-color: rgb(207, 199, 199);
 }
 
 .part-3{
-display: flex;  
-flex-direction: row;
-gap:10rem;
-}
+  display: flex;  
+  flex-direction: row;
+  gap:10rem;
+  }
 
 .block1:hover:hover {
-color: red;
-display: block;
+  color: red;
+  display: block;
 
 }
 .block1{
-margin:0.5rem; 
+ margin:0.5rem; 
+
 }
 
 .logos{
@@ -783,16 +786,21 @@ margin: 5px;
 }
 
 .logos:hover {
-background-color: rgb(207, 199, 199);
+  background-color: rgb(207, 199, 199);
 }
 .box {
-display:flex ; 
-flex-direction: column;
-margin:0;
+  display:flex ; 
+  flex-direction: column;
+  margin:0;
 }
+.box a{
+  text-decoration: none; 
+  color:white;
+ }
+ 
 
 .region{
-font-size: 20px; 
+ font-size: 20px; 
 }
 
 .bloque3 {
@@ -804,7 +812,7 @@ color: red;
 }
 
 .footerporsche{
-margin-left: 500px;
+  margin-left: 500px;
 }
 
 /* <--------------Fin estilos Natalia -------------------> */
